@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
+         xmlns:NC="http://home.netscape.com/NC-rdf#"
+         xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <RDF:Description RDF:about="urn:mozilla:install-manifest"
+                   em:id="roundbird@labus-online.de"
+                   em:name="Roundbird"
+                   em:version="0.1"
+                   em:creator="Julian Labus"
+                   em:description="Thunderbird Extension for Roundup Issue Tracker."
+                   em:homepageURL="https://www.labus-online.de/gitweb">
+    <em:targetApplication RDF:resource="rdf:#$76ASO2"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="rdf:#$76ASO2"
+                   em:id="{3550f703-e582-4d05-9a08-453d09bdfdc6}"
+                   em:minVersion="24.*"
+                   em:maxVersion="*.*" />
+</RDF:RDF>

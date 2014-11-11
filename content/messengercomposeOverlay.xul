@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<overlay id="roundup-overlay"
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <script type="application/x-javascript"
+    src="chrome://roundbird/content/messengercomposeOverlay.js" />
+
+  <toolbarpalette id="MsgComposeToolbarPalette">
+    <toolbarbutton id="roundup-properties-button"/>
+  </toolbarpalette>
+
+  <toolbarbutton id="roundup-properties-button"
+    label="Roundup"
+    tooltiptext="set Roundup properties"
+    image="chrome://roundbird/skin/firebug-32.png"
+    class="chromeclass-toolbar-additional"
+    oncommand="openProperties();"
+  />
+
+</overlay>

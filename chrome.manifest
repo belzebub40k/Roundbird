@@ -1,0 +1,4 @@
+content   roundbird                content/
+skin      roundbird  classic/1.0   skin/
+
+overlay chrome://messenger/content/messengercompose/messengercompose.xul chrome://roundbird/content/messengercomposeOverlay.xul

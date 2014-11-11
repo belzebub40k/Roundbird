@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/global.css" type="text/css"?>
+
+<dialog id="roundup-properties-dialog" title="Roundup Properties"
+   xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+   buttons="accept,cancel"
+   buttonlabelcancel="Cancel"
+   buttonlabelaccept="Accept"
+   onload="loadData();"
+   ondialogaccept="return clickedAccept();">
+   
+   <script type="application/x-javascript" src="chrome://messenger/content/jquery.js" />
+   <script type="application/x-javascript" src="chrome://roundbird/content/roundupPropertiesDialog.js" />
+
+   <box>
+      <box orient="vertical">
+         <label control="type" value="Type" style="margin-top: 10px;" />
+         <menulist id="type">
+            <menupopup>
+               <menuitem label="- no selected -" value=""/>
+            </menupopup>
+         </menulist>
+
+         <label control="user" value="Assigned To" style="margin-top: 10px;" />
+         <menulist id="user">
+            <menupopup>
+               <menuitem label="- no selected -" value=""/>
+            </menupopup>
+         </menulist>
+
+         <label control="status" value="Status" style="margin-top: 10px;" />
+         <menulist id="status">
+            <menupopup>
+               <menuitem label="- no selected -" value=""/>
+            </menupopup>
+         </menulist>
+
+         <label control="priority" value="Priority" style="margin-top: 10px;" />
+         <menulist id="priority">
+            <menupopup>
+               <menuitem label="- no selected -" value=""/>
+            </menupopup>
+         </menulist>
+
+         <label control="superseder" value="Superseder" style="margin-top: 10px;" />
+         <textbox id="superseder" />
+      </box>
+      <box orient="vertical">
+         <label control="component" value="Components" style="margin-top: 10px;" />
+         <listbox id="component" seltype="multiple" rows="8" />
+         
+         <label control="version" value="Versions" style="margin-top: 10px;" />
+         <listbox id="version" seltype="multiple" rows="4" />
+      </box>
+   </box>
+   
+</dialog>
